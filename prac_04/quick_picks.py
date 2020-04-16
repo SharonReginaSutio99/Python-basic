@@ -1,3 +1,7 @@
+"""
+Name: Sharon Regina Sutio
+Link: https://github.com/SharonReginaSutio99/cp1404practicals
+"""
 import random
 quick_picks = int(input("How many quick picks? "))
 MINIMUM = 1
