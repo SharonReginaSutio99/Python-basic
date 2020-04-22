@@ -1,13 +1,13 @@
 """
 CP1404/CP5632 Practical
-Store user's emails and names
+Store user's emails and names.
 Name: Sharon Regina Sutio
 Link: https://github.com/SharonReginaSutio99/cp1404practicals
 """
 
 
 def get_name(email):
-    """Separate name from email"""
+    """Separate name from email."""
     possible_name = email.split("@")[0]
     full_name = ""
     names = possible_name.split(".")
@@ -18,7 +18,7 @@ def get_name(email):
 
 
 def verify_name_input(full_name):
-    """Filter unwanted name input"""
+    """Filter unwanted name input."""
     name_confirmation = input("Is your name {}? (Y / N)".format(full_name))
     name_confirmation_input = ["", "y", "n"]
     while name_confirmation.lower() not in name_confirmation_input:
@@ -33,7 +33,7 @@ def verify_name_input(full_name):
 
 
 def main():
-    """Store user's name and emails"""
+    """Store user's name and emails."""
     emails_to_names = {}
     email = input("Email: ")
     while email != "":
