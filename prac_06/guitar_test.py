@@ -1,4 +1,4 @@
-"""CP1404/CP5632 Practical - Client code to use the Guitar class.
+"""CP1404/CP5632 Practical - Testing use of the Guitar class.
 Name: Sharon Regina Sutio
 Link: https://github.com/SharonReginaSutio99/cp1404practicals"""
 
