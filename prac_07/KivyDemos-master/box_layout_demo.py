@@ -1,3 +1,10 @@
+"""
+CP1404/CP5632 Practical
+Kivy GUI program to square a number
+Sharon Regina Sutio
+Link: https://github.com/SharonReginaSutio99/cp1404practicals
+"""
+
 from kivy.app import App
 from kivy.lang import Builder
 
