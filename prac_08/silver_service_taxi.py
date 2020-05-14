@@ -25,7 +25,7 @@ class SilverServiceTaxi(Taxi):
 
     def get_fare(self):
         """Calculate the total fare of SilverService Taxi."""
-        normal_fare = super().get_fare(self)
+        normal_fare = super().get_fare()
         return normal_fare + self.flagfall
 
 
