@@ -21,7 +21,7 @@ class SilverServiceTaxi(Taxi):
 
     def __str__(self):
         """Return a string like a Taxi plus flagfall."""
-        return "{} plus flagfall of ${}".format(super().__str__(), self.flagfall)
+        return "{} plus flagfall of ${:.2f}".format(super().__str__(), self.flagfall)
 
     def get_fare(self):
         """Calculate the total fare of SilverService Taxi."""
