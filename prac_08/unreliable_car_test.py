@@ -1,10 +1,16 @@
+"""
+CP1404/CP5632 Practical
+Tests for Unreliable Cars
+Sharon Regina Sutio
+Link: https://github.com/SharonReginaSutio99/cp1404practicals
+"""
 from prac_08.unreliable_car import UnreliableCar
 
 
 def main():
     """Test UnreliableCars."""
-    good_car = UnreliableCar("Good car", 100, 90)
-    bad_car = UnreliableCar("Bad car", 100, 9)
+    good_car = UnreliableCar("Good car", 100, 95)
+    bad_car = UnreliableCar("Bad car", 100, 5)
 
     # test the randomness by driving the car 10 times in a distance range 1-10km
     # print the distance driven

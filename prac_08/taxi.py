@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Car class
+Taxi class
 Sharon Regina Sutio
 Link: https://github.com/SharonReginaSutio99/cp1404practicals
 """
