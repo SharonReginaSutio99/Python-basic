@@ -20,21 +20,37 @@ def main():
         # print("(Current working directory is: {})".format(os.getcwd()))
 
         for filename in filenames:
-            new_name = get_fixed_filename(filename)
-            print("Renaming {} to {}".format(filename, new_name))
+
+            new_name1 = get_separate_words(filename)
+            print(new_name1)
+            #print("Renaming {} to {}".format(filename, new_name2))
 
             full_name = os.path.join(directory_name, filename)
-            new_name = os.path.join(directory_name, new_name)
+            new_name = os.path.join(directory_name, new_name1)
             # os.rename(full_name, new_name)
+
+
+def get_separate_words(filename):
+    """Separate name when next letter is uppercase."""
+    new_name = ""
+    special_character = "_()"
+    # Go through letter one by one
+    for current_index, letter in enumerate(filename):
+        new_name += letter
+
+        # Check the next letter and stop before last letter
+        if current_index < len(filename) - 1:
+            if letter not in special_character and filename[current_index + 1] not in special_character:
+                # Add a _ to separate names if next letter is uppercase
+                if letter.isalnum and filename[current_index + 1].isupper():
+                    new_name += "."
+
+    return new_name
 
 
 def get_fixed_filename(filename):
     """Return a 'fixed' version of filename."""
-    #new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
-    new_name = ""
-    for current_index and current_letter in filename:
-        new_name += current_letter
-
+    # new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
     return new_name
 
 
