@@ -25,12 +25,16 @@ def main():
 
             full_name = os.path.join(directory_name, filename)
             new_name = os.path.join(directory_name, new_name)
-            os.rename(full_name, new_name)
+            # os.rename(full_name, new_name)
 
 
 def get_fixed_filename(filename):
     """Return a 'fixed' version of filename."""
-    new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    #new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    new_name = ""
+    for current_index and current_letter in filename:
+        new_name += current_letter
+
     return new_name
 
 
